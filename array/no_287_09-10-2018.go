@@ -1,5 +1,7 @@
 package array
 
+import "fmt"
+
 /*
 Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive),
 prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
@@ -27,4 +29,22 @@ link: https://leetcode.com/problems/find-the-duplicate-number/description/
 */
 
 func Tianyun_findDuplicate(nums []int) int {
+	l:=1
+	r:=len(nums)-1
+	mid :=(l+r)/2
+	for l<r{
+		cnt:=0
+		for i:=0;i<len(nums);i++{
+			if nums[i]<=mid{
+				cnt++
+			}
+		}
+		if cnt<=mid{
+			l=mid+1
+		}else{
+			r=mid
+		}
+		mid=(l+r)/2
+	}
+	return l
 }
