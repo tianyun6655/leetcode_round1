@@ -18,4 +18,5 @@ The given number is in the range [0, 108]
 
 func Tianyun_maximumSwap(num int) int {
 
+return  -1
 }
