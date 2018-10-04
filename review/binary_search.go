@@ -4,9 +4,9 @@ import "fmt"
 
 func BinarySearch(source []int, target int) int{
 
+	//Tesr222
 	left :=0
 	right:=len(source)-1
-
 	for left<right{
          mid := (left+right)/2
          fmt.Println(mid)
