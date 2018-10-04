@@ -3,7 +3,6 @@ package review
 import "fmt"
 
 func BinarySearch(source []int, target int) int{
-    //testtestte
 
 	left :=0
 	right:=len(source)-1
