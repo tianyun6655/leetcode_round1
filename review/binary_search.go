@@ -4,7 +4,7 @@ import "fmt"
 
 func BinarySearch(source []int, target int) int{
 
-	//dfdfdfdfdf
+	//tetttt
 	left :=0
 	right:=len(source)-1
 	for left<right{
